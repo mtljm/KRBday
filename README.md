@@ -1,2 +1,9 @@
 # Bday
-KR business day  krolling
+KR business day  crolling
+
+
+return type datetime 
+
+so use it as datetime.strftime
+
+you can make your type

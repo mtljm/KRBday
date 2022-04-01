@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 # In[13]:
 
 
-def Bday():
+def KRBday():
     url = 'https://finance.naver.com/item/main.naver?code=005930'
     biz_day = rq.get(url=url)
     soup = BeautifulSoup(biz_day.content, "html.parser")
@@ -26,28 +26,3 @@ day = today.day
 today = datetime.strptime(str(year)+str(month)+str(day),'%Y%m%d')
     
     return today
-
-
-# In[14]:
-
-
-bday =Bday()
-
-
-# In[16]:
-
-
-today = bday
-
-
-# In[20]:
-
-
-
-
-
-# In[22]:
-
-
-today
-

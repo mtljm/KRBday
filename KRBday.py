@@ -20,9 +20,9 @@ def KRBday():
     year = str(datetime.today().year)
     today = datetime.strptime(year+day,'%Y%m/%d')
     if today.timestamp() > datetime.today().timestamp():
-year = today.year-1
-month = today.month
-day = today.day
-today = datetime.strptime(str(year)+str(month)+str(day),'%Y%m%d')
-    
+        year = today.year-1
+        month = today.month
+        day = today.day
+        today = datetime.strptime(str(year)+str(month)+str(day),'%Y%m%d')
+
     return today
